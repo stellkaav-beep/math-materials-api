@@ -7,12 +7,14 @@ export default function handler(req, res) {
   let finalFormat = format;
   
   if (notes) {
-    const match = notes.match(/topic=([^,]+),format=(\w+)/);
-    if (match) {
-      finalTopic = match[1];
-      finalFormat = match[2];
-    }
+  // Убираем HTML теги
+  const cleanNotes = notes.replace(/<\/?[^>]+(>|$)/g, "");
+  const match = cleanNotes.match(/topic=([^,]+),format=(\w+)/);
+  if (match) {
+    finalTopic = match[1];
+    finalFormat = match[2];
   }
+}
   
   if (!finalTopic || !finalFormat) {
     return res.status(400).json({ error: 'Missing parameters', notes });
