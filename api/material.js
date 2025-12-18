@@ -1,9 +1,21 @@
 export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   
-  const { topic, format } = req.query;
+  const { topic, format, notes } = req.query;
   
-  if (!topic || !format) {
+  // Если передана строка notes - парсим её
+  let finalTopic = topic;
+  let finalFormat = format;
+  
+  if (notes) {
+    const match = notes.match(/topic=([^,]+),format=([^,]+)/);
+    if (match) {
+      finalTopic = match[1];
+      finalFormat = match[2];
+    }
+  }
+  
+  if (!finalTopic || !finalFormat) {
     return res.status(400).json({ error: 'Missing topic or format parameter' });
   }
   
@@ -28,7 +40,7 @@ export default function handler(req, res) {
     }
   };
   
-  const key = `${topic}_${format}`;
+  const key = `${finalTopic}_${finalFormat}`;
   const material = materials[key];
   
   if (!material) {
@@ -40,3 +52,14 @@ export default function handler(req, res) {
     key: key
   });
 }
+```
+
+**Сохрани → Vercel автоматически задеплоит.**
+
+---
+
+## **В боте измени HTTP запрос:**
+
+**URL:**
+```
+https://math-materials-api.vercel.app/api/material?notes={{context.result.notes}}
