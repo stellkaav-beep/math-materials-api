@@ -24,9 +24,10 @@ export default function handler(req, res) {
   // СНАЧАЛА проверяем video_hw
   if (finalFormat === 'video_hw') {
     const videoHwMaterials = {
-      "topic_geo7_ugol_video_hw": "Видео: https://rutube.ru/video/private/c4573fa53d76e33d4783fe4100f755a1/?p=JA4kYXer1WqMx1dkhmz1cQ\n\nДЗ: https://disk.yandex.ru/i/98OP0TIgyR7duw",
-      "topic_alg7_stepeni_video_hw": "Видео: https://rutube.ru/video/private/b5333fd31520b4997acd24750577e0e8/?p=pw65u8y4UmCYBaLFAwFUpA\n\nДЗ: https://disk.yandex.ru/i/2ldigd5ujpOhgQ",
-      "topic_alg8_drobi_video_hw": "Видео: https://rutube.ru/video/private/691d52b9f3320319769fc91ac71a6b19/?p=3CxPjpZnzgzEQjfCIxIpRw\n\nДЗ: https://disk.yandex.ru/i/ioQ6ri6LIFf9IQ"
+      "topic_geo7_ugol_video_hw": "Видео: https://disk.yandex.ru/i/ZCKBcyqWGTGyIw\n\nДЗ: https://disk.yandex.ru/i/7lSeKDjy6ivCmA",
+      "topic_alg7_stepeni_video_hw": "Видео: https://disk.yandex.ru/i/4fGagOSYfxDIQw\n\nДЗ: https://disk.yandex.ru/i/SuKynhUcUxkn8Q",
+      "topic_alg8_drobi_video_hw": "Видео: https://rutube.ru/video/private/691d52b9f3320319769fc91ac71a6b19/?p=3CxPjpZnzgzEQjfCIxIpRw\n\nДЗ: https://disk.yandex.ru/i/ioQ6ri6LIFf9IQ",
+      "topic_geo7_otrezok_video_hw": "Видео: https://disk.yandex.ru/i/oZE5Ufkg2rniRA\n\nДЗ: https://disk.yandex.ru/i/F1Wf8jkKISE_0Q"
     };
     
     const material = videoHwMaterials[key];
@@ -39,11 +40,13 @@ export default function handler(req, res) {
   // Потом ищем в обычных materials
   const materials = {
     "topic_geo7_ugol_text": "https://disk.yandex.ru/i/g_aEzKxBVYFzRw",
-    "topic_geo7_ugol_video": "https://rutube.ru/video/private/c4573fa53d76e33d4783fe4100f755a1/?p=JA4kYXer1WqMx1dkhmz1cQ",
+    "topic_geo7_ugol_video": "https://disk.yandex.ru/i/ZCKBcyqWGTGyIw",
     "topic_alg7_stepeni_text": "https://disk.yandex.ru/i/98CpuXc-4tDmGg",
-    "topic_alg7_stepeni_video": "https://rutube.ru/video/private/b5333fd31520b4997acd24750577e0e8/?p=pw65u8y4UmCYBaLFAwFUpA",
+    "topic_alg7_stepeni_video": "https://disk.yandex.ru/i/4fGagOSYfxDIQw",
     "topic_alg8_drobi_text": "https://disk.yandex.ru/i/sOWc2ZxQnqZ9KQ",
-    "topic_alg8_drobi_video": "https://rutube.ru/video/private/691d52b9f3320319769fc91ac71a6b19/?p=3CxPjpZnzgzEQjfCIxIpRw"
+    "topic_alg8_drobi_video": "https://rutube.ru/video/private/691d52b9f3320319769fc91ac71a6b19/?p=3CxPjpZnzgzEQjfCIxIpRw",
+    "topic_geo7_otrezok_text": "https://disk.yandex.ru/i/sUhuOqDxvfdINQ",
+    "topic_geo7_otrezok_video": "https://disk.yandex.ru/i/oZE5Ufkg2rniRA"
   };
   
   const material = materials[key];
