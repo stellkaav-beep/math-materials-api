@@ -30,7 +30,8 @@ export default function handler(req, res) {
       "topic_alg8_drobi_video_hw": "Видео: https://disk.yandex.ru/i/VEOxckIGqysMCQ\n\nДЗ: https://disk.yandex.ru/i/0GQVXI1uSIchkw",
       "topic_alg8_drobiud_video_hw": "Видео: https://disk.yandex.ru/i/ORZjVM3bSB1DFw\n\nДЗ: https://disk.yandex.ru/i/viE83dNpEbXvLg",
       "topic_geo8_mnogo_video_hw": "Видео: https://disk.yandex.ru/i/FRntWHvzRE9WEw\n\nДЗ: https://disk.yandex.ru/i/FvUpp9e1tj9XDQ",
-      "topic_geo8_mnogoprk_video_hw": "Видео: https://disk.yandex.ru/i/KP7OuS37kRtM-Q\n\nДЗ: https://disk.yandex.ru/i/6bu986kLVHw9dw"
+      "topic_geo8_mnogoprk_video_hw": "Видео: https://disk.yandex.ru/i/KP7OuS37kRtM-Q\n\nДЗ: https://disk.yandex.ru/i/6bu986kLVHw9dw",
+      "topic_alg7_chisl_video_hw": "Видео: https://disk.yandex.ru/i/BUHPkgm_0y7YZw\n\nДЗ: https://disk.yandex.ru/i/Du5OyB42O4ikwA"
     };
     
     const material = videoHwMaterials[key];
@@ -42,7 +43,7 @@ export default function handler(req, res) {
   
   // Потом ищем в обычных materials
   const materials = {
-    "topic_geo7_ugol_text": "https://disk.yandex.ru/i/g_aEzKxBVYFzRw",
+    "topic_geo7_ugol_text": "https://disk.yandex.ru/i/gRwstxF0M8JfLA",
     "topic_geo7_ugol_video": "https://disk.yandex.ru/i/ZCKBcyqWGTGyIw",
     "topic_alg7_stepeni_text": "https://disk.yandex.ru/i/98CpuXc-4tDmGg",
     "topic_alg7_stepeni_video": "https://disk.yandex.ru/i/4fGagOSYfxDIQw",
@@ -55,7 +56,9 @@ export default function handler(req, res) {
     "topic_geo8_mnogo_text": "https://disk.yandex.ru/i/2zH6SoSq8HmIMg",
     "topic_geo8_mnogo_video": "https://disk.yandex.ru/i/FRntWHvzRE9WEw",
     "topic_geo8_mnogoprk_text": "https://disk.yandex.ru/i/kWZpamr-rpn19g",
-    "topic_geo8_mnogoprk_video": "https://disk.yandex.ru/i/KP7OuS37kRtM-Q"
+    "topic_geo8_mnogoprk_video": "https://disk.yandex.ru/i/KP7OuS37kRtM-Q",
+    "topic_alg7_chisl_text": "https://disk.yandex.ru/i/WUq5iWAIMRdiKw",
+    "topic_alg7_chisl_video": "https://disk.yandex.ru/i/BUHPkgm_0y7YZw"
   };
   
   const material = materials[key];
