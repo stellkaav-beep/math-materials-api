@@ -43,7 +43,7 @@ export default function handler(req, res) {
   
   // Потом ищем в обычных materials
   const materials = {
-    "topic_geo7_ugol_text": "https://disk.yandex.ru/i/gRwstxF0M8JfLA",
+    "topic_geo7_ugol_text": "https://disk.yandex.ru/i/asTmbAVA-JcoKw",
     "topic_geo7_ugol_video": "https://disk.yandex.ru/i/ZCKBcyqWGTGyIw",
     "topic_alg7_stepeni_text": "https://disk.yandex.ru/i/98CpuXc-4tDmGg",
     "topic_alg7_stepeni_video": "https://disk.yandex.ru/i/4fGagOSYfxDIQw",
