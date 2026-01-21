@@ -24,7 +24,7 @@ export default function handler(req, res) {
   // СНАЧАЛА проверяем video_hw
   if (finalFormat === 'video_hw') {
     const videoHwMaterials = {
-      "topic_geo7_ugol_video_hw": "Видео: https://disk.yandex.ru/i/ZCKBcyqWGTGyIw\n\nДЗ: https://disk.yandex.ru/i/7lSeKDjy6ivCmA",
+      "topic_geo7_ugol_video_hw": "Видео: https://disk.yandex.ru/i/ZCKBcyqWGTGyIw\n\nДЗ: https://disk.yandex.ru/i/d6xPM7dV9_sKZw",
       "topic_alg7_stepeni_video_hw": "Видео: https://disk.yandex.ru/i/4fGagOSYfxDIQw\n\nДЗ: https://disk.yandex.ru/i/SuKynhUcUxkn8Q",
       "topic_geo7_otrezok_video_hw": "Видео: https://disk.yandex.ru/i/oZE5Ufkg2rniRA\n\nДЗ: https://disk.yandex.ru/i/F1Wf8jkKISE_0Q",
       "topic_alg8_drobi_video_hw": "Видео: https://disk.yandex.ru/i/VEOxckIGqysMCQ\n\nДЗ: https://disk.yandex.ru/i/0GQVXI1uSIchkw",
