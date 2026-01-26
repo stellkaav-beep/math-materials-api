@@ -32,7 +32,8 @@ export default function handler(req, res) {
       "topic_geo8_mnogo_video_hw": "Видео: https://disk.yandex.ru/i/FRntWHvzRE9WEw\n\nДЗ: https://disk.yandex.ru/i/E_O9kg06wiKrOA",
       "topic_geo8_mnogoprk_video_hw": "Видео: https://disk.yandex.ru/i/KP7OuS37kRtM-Q\n\nДЗ: https://disk.yandex.ru/i/m2kBsWuEy2b3tA",
       "topic_alg7_chisl_video_hw": "Видео: https://disk.yandex.ru/i/BUHPkgm_0y7YZw\n\nДЗ: https://disk.yandex.ru/i/8kR1cynJ1sjOVg",
-      "topic_alg7_stepeninatur_video_hw": "Видео: https://disk.yandex.ru/i/kY83OIBw285Z3A\n\nДЗ: https://disk.yandex.ru/i/-ZZ6UJVZNznXRA"
+      "topic_alg7_stepeninatur_video_hw": "Видео: https://disk.yandex.ru/i/kY83OIBw285Z3A\n\nДЗ: https://disk.yandex.ru/i/-ZZ6UJVZNznXRA",
+      "topic_alg8_drobislo_video_hw": "Видео: https://disk.yandex.ru/i/z5fS6Yiq84gqAA\n\nДЗ: https://disk.yandex.ru/i/uUwgYeOarMZpjw"
     };
     
     const material = videoHwMaterials[key];
@@ -61,7 +62,9 @@ export default function handler(req, res) {
     "topic_alg7_chisl_text": "https://disk.yandex.ru/i/WUq5iWAIMRdiKw",
     "topic_alg7_chisl_video": "https://disk.yandex.ru/i/BUHPkgm_0y7YZw",
     "topic_alg7_stepeninatur_text": "https://disk.yandex.ru/i/0iuYA3t9-E8t7A",
-    "topic_alg7_stepeninatur_video": "https://disk.yandex.ru/i/kY83OIBw285Z3A"
+    "topic_alg7_stepeninatur_video": "https://disk.yandex.ru/i/kY83OIBw285Z3A",
+    "topic_alg8_drobislo_text": "https://disk.yandex.ru/i/44B3Kb8fit8ZwQ",
+    "topic_alg8_drobislo_video": "https://disk.yandex.ru/i/z5fS6Yiq84gqAA"
   };
   
   const material = materials[key];
