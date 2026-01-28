@@ -19,9 +19,17 @@ export default function handler(req, res) {
     return res.status(400).json({ error: 'Missing parameters', notes });
   }
   
+  // ФИКС: добавляем подчеркивания если их нет
+  // topicgeo8mnogoprk -> topic_geo8_mnogoprk
+  if (!finalTopic.includes('_')) {
+    finalTopic = finalTopic
+      .replace(/^topic/, 'topic_')  // topic -> topic_
+      .replace(/(geo|alg)(\d+)/, '$1$2_');  // geo8 -> geo8_
+  }
+  
   const key = `${finalTopic}_${finalFormat}`;
   
-  // СНАЧАЛА проверяем video_hw
+  // video_hw проверка
   if (finalFormat === 'video_hw') {
     const videoHwMaterials = {
       "topic_geo7_ugol_video_hw": "Видео: https://disk.yandex.ru/i/ZCKBcyqWGTGyIw\n\nДЗ: https://disk.yandex.ru/i/d6xPM7dV9_sKZw",
@@ -43,7 +51,6 @@ export default function handler(req, res) {
     return res.status(200).json({ link: material, key });
   }
   
-  // Потом ищем в обычных materials
   const materials = {
     "topic_geo7_ugol_text": "https://disk.yandex.ru/i/asTmbAVA-JcoKw",
     "topic_geo7_ugol_video": "https://disk.yandex.ru/i/ZCKBcyqWGTGyIw",
